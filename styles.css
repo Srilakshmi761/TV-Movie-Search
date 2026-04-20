@@ -1,0 +1,247 @@
+/* Custom CSS variables for light theme colors */
+/* :root {
+  --primary: #019dd5;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0b3b58;
+} */
+
+:root {
+  --primary: #6366f1; /* Indigo */
+  --bg: #f1f5f9;;
+  --card: #ffffff;
+  --text: #1e293b;
+}
+
+/* Overrides for dark theme when .dark class is applied to body */
+ body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f1f5f9;
+} 
+
+
+body {
+  background: var(--bg); /* clean base */
+  color: var(--text);
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+}
+
+
+
+/* Navbar layout using Flexbox for logo and buttons spacing */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  /*   background: #b3b9c7; */
+  /*  border-bottom: 5px solid rgba(0,0,0,0.05); */
+  /*   border-style:groove */
+
+  border-bottom: px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition:
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Hero section centered vertically and horizontally */
+ .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  
+} 
+
+
+/* Search container aligning input and buttons centrally */
+.search-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .search-wrap {
+    flex-direction: column;
+  }
+}
+
+/* Input field styled as modern rounded search pill */
+input {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+
+  width: 100%;
+  max-width: 300px;
+
+  /* width: 300px; */
+  outline: none;
+}
+
+/* Primary button with hover-ready styling */
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Secondary button variant using gray color */
+button.secondary {
+  background: #64748b;
+}
+
+/* Compact pill buttons for search history list */
+.hist-pill {
+  background: #fcfdfd;
+  color: #475569;
+  padding: 5px 12px;
+  margin: 5px;
+  font-size: 0.75rem;
+  border-radius: 15px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+}
+
+/* Responsive grid adapting to screen size with auto-fit columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 20px 5%;
+}
+
+/* Individual cards with shadow and rounded corners */
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Images scaled consistently within card bounds */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Shimmer animation keyframes moving left to right */
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Skeleton image placeholder base */
+.skeleton .skel-img {
+  height: 300px;
+  background: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer overlay creating loading animation effect */
+.skeleton .skel-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: loading 1.5s infinite;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--primary);
+  transition: letter-spacing 0.3s ease;
+}
+
+.logo:hover span {
+  letter-spacing: 2px;
+}
+.rating {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #6366f1, transparent);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+body:not(.dark) {
+  background:
+    radial-gradient(
+      800px circle at 50% -200px,
+      rgba(99, 102, 241, 0.08),
+      transparent 60%
+    ),
+    var(--bg);
+}
+body.dark {
+  background:
+    radial-gradient(
+      900px circle at 50% -200px,
+      rgba(99, 102, 241, 0.18),
+      transparent 60%
+    ),
+    var(--bg);
+}

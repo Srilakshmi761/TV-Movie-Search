@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <!--TV Explorer Pro - A TV and Movie Search Application -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title of the application-->
+    <title>TV Explorer Pro</title>
+    <!--linking the stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--navigation bar with logo and controls-->
+    <nav class="navbar">
+      <div class="logo">TV <span>Explorer</span></div>
+      <div class="nav-controls">
+        <button id="showFavsBtn">❤️ Favorites</button>
+        <button id="themeToggle">🌓 Theme</button>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <!--hero section with title, description, search bar, and status message-->
+      <h1>Discover Your Next Favorite Show</h1>
+      <p>
+        Search for TV shows and movies, explore details, and save your favorites
+        all in one place.
+      </p>
+
+      <!--search bar with input field and buttons-->
+      <div class="search-wrap">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Search for TV shows or movies..."
+        />
+        <button id="fetchBtn">🔍 Search</button>
+        <button id="clearBtn" class="secondary">🧹 Clear</button>
+      </div>
+
+      <!--history panel to display search history-->
+      <div id="historyPanel" class="history-container"></div>
+      <p id="status">Ready.</p>
+    </header>
+    <!--main display area for search results and details-->
+    <main id="display" class="grid-container"></main>
+
+    <!--JavaScript file-->
+    <script src="app.js"></script>
+  </body>
+</html>
