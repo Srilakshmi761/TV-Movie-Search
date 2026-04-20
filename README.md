@@ -2,7 +2,7 @@
 Live Site: https://srilakshmi761.github.io/TV-Movie-Search/ 
 GitHub Repository: https://github.com/Srilakshmi761/TV-Movie-Search
 
- # Project Description:
+ ### Project Description:
 The TV & Movie Search App is a dynamic JavaScript web application that allows users to search for movies and TV shows using a public movie API. Users can search by entering keywords, and the application displays a list of matching results, including posters, ratings, and other relevant details. Each result also provides a link to the official page for more information. Additionally, the application allows users to save their favorite movies and TV shows for easy access.
 
 Screen shorts of application before search and after search
@@ -11,7 +11,7 @@ Screen shorts of application before search and after search
 
 <img width="940" height="463" alt="image" src="https://github.com/user-attachments/assets/5647f9d2-d33b-431f-8be8-0b675409b65e" />
 
-# Technology Used:
+### Technology Used:
 •	HTML
 Used to build the structure of the web application, such as divs, navigation bar, buttons, and page layout.
 •	CSS
@@ -22,12 +22,12 @@ Used to handle the main functionality of the app, including calling the movie AP
 Used for version control and to store and manage the project code online.
 •	Public Movie API
 Used to fetch movies and TV show data such as titles, posters, ratings, and external links.
-# Limitations: 
+### Limitations: 
 Requires internet connection 
 Depends on a third-party API for data availability
 Users cannot currently clear search history
 
-# Installation / Run Instructions
+### Installation / Run Instructions
 Option 1: Run Online 
 The application can be used directly through the live link:
 https://srilakshmi761.github.io/TV-Movie-Search/
@@ -53,7 +53,7 @@ Option 2: Run Locally
 - 5:40 – Brief explanation of API-related code
 - 6:43 – Reflection and future improvements
 
-# Self Reflection
+### Self Reflection
 For this assignment, I chose the TV and Movie Search application option. The base code was explained by the teacher, and I extended the application with the help of Copilot by adding extra features. These included changing colors, adding visual effects, hover effects on buttons, fetching movie ratings, and providing users with the original show URL using an alert button.
 Working with the given code and using Copilot to help write additional code did not feel very difficult. However, I struggled at first to fully understand how the code worked. To overcome this, I went back to the tutorials provided by the teacher and rewatched lessons related to API integration. One of the main learning outcomes for me was understanding how asynchronous code works in real-world scenarios, especially when using the Fetch API.
 I also learned how to use Prettier to format my code and how to commit changes directly through GitHub without using the terminal. Understanding the purpose of the .gitignore file was initially confusing, so I searched for YouTube videos to better understand the concept. Since I had already explored localStorage in Project 1, it helped me understand how search history can be stored on the local device in this project.
@@ -62,7 +62,7 @@ Even though many of the topics felt difficult at first, I managed to understand 
 
 
 
-# Self Assessment Table
+### Self Assessment Table
 
 
 | Criteria | Self Assessment | Comments |
