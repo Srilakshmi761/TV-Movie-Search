@@ -40,6 +40,19 @@ Option 2: Run Locally
 •	Open the index.html file in a web browser or editor such as VS Code.
 •	The application will run locally without any additional configuration.
 
+### Timestamps
+- 0:00 – Project overview and introduction
+- 0:52 – Search functionality explained
+- 1:25 – API integration explanation
+- 1:52 – Clear button functionality
+- 2:10 – Loading and error handling, including localStorage usage
+- 4:01 – Results display and favorites feature
+- 4:15 – Dark and light theme toggle
+- 4:45 – Hover effects on buttons
+- 5:16 – Explanation of `.gitignore`
+- 5:40 – Brief explanation of API-related code
+- 6:43 – Reflection and future improvements
+
 # Self Reflection
 For this assignment, I chose the TV and Movie Search application option. The base code was explained by the teacher, and I extended the application with the help of Copilot by adding extra features. These included changing colors, adding visual effects, hover effects on buttons, fetching movie ratings, and providing users with the original show URL using an alert button.
 Working with the given code and using Copilot to help write additional code did not feel very difficult. However, I struggled at first to fully understand how the code worked. To overcome this, I went back to the tutorials provided by the teacher and rewatched lessons related to API integration. One of the main learning outcomes for me was understanding how asynchronous code works in real-world scenarios, especially when using the Fetch API.
